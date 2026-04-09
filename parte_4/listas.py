@@ -2,8 +2,8 @@
 fruits = ["apple", "banana", "naranja", "sandía"]
 nums = [1, 2, 3, 4, 5]
 
-print(fruits[0])       # manzana (primer elemento)
-print(nums[-1])      # naranja (último elemento)
+print(fruits[0])       # apple (primer elemento)
+print(nums[-1])      # 5 (último elemento)
 
 fruits.append("uvas")     # agrega al final
 fruits.insert(1, "kiwi") # inserta en posición 1
