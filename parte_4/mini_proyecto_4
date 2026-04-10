@@ -1,0 +1,36 @@
+# Agenda de Contactos
+# Crea una agenda en consola usando una lista de diccionarios. 
+# Funciones: agregar_contacto(), buscar_contacto(nombre)
+# , mostrar_todos(), eliminar_contacto(nombre). 
+# Menú con while para mantenerla activa. 
+# Cada contacto tiene nombre, teléfono y email.
+
+agenda = []
+
+def agregar_contacto():
+    nombre = input("Dame tu nombre: ")
+    email = input("Dame tu email: ")
+    telefono = input("Dame tu telefono: ")
+
+    contacto = {
+        "nombre": nombre,
+        "email": email,
+        "telefono": telefono
+    }
+
+    agenda.append(contacto)
+
+    print("Contacto agregado")
+
+def buscar_contacto(nombre):
+    pass
+
+def mostrar_todos():
+    for conta in agenda: 
+        print(f"{conta['nombre']}, {conta['email']}, {conta['telefono']}")
+
+def eliminar_contacto(nombre):
+    pass
+
+def mostrar_menu():
+    pass
