@@ -14,12 +14,13 @@ with open("notas.txt", "a", encoding="utf-8") as f:
 
 # JSON — guardar y cargar estructuras de datos
 import json
-
-datos = {"nombre": "Carlos", "edad": 25, "hobbies": ["ver peliculas", "correr"]}
-
+#haré cambios de nombres y agregaré otros 
+datos = {"nombre": "Carlos", "edad": 25, "hobbies": ["ver peliculas", "correr"]
+            "nombre": "Pedro", "edad": 25, "hobbies": ["ver peliculas", "correr"]}
 with open("datos.json", "w") as f:
     json.dump(datos, f, indent=4)
 
 with open("datos.json", "r") as f:
     recuperado = json.load(f)
     print(recuperado["nombre"])
+
